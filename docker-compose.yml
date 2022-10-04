@@ -6,11 +6,11 @@ services:
       context: python_server
     env_file: .env
     environment:
-      - "MY_NAME:${MY_NAME}"
+      - "MY_NAME:${MY_NAME}" # キーとバリューは同じじゃないと行けないみたい。
 
   rust_server:
     build:
       context: rust_server
     env_file: .env
     environment:
-      - "MY_NAME:${MY_NAME}"
+      - "MY_NAME:${MY_NAME}" # 例えば、 "WHY_NAME:${MY_NAME}" とかだとエラーになる。　
