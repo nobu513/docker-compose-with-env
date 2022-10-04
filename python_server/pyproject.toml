@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python-server"
+version = "0.1.0"
+description = ""
+authors = ["nobu513 <63525140+nobu513@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "python_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+SQLAlchemy = "^1.4.41"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

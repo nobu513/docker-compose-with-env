@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  python_server:
+    build:
+      context: python_server
+    env_file: .env
+    environment:
+      - "MY_NAME:${MY_NAME}"
+
+  rust_server:
+    build:
+      context: rust_server
+    env_file: .env
+    environment:
+      - "MY_NAME:${MY_NAME}"
